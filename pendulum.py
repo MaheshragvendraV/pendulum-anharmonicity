@@ -1,23 +1,3 @@
-"""
-Large-Angle Pendulum: Anharmonicity
------------------------------------
-A simple pendulum is only a "simple harmonic oscillator" for small swings.
-As the amplitude grows, the period gets LONGER and the motion is no longer a
-perfect sine wave. This is called ANHARMONICITY.
-
-This script:
-  1. Integrates the exact pendulum equation of motion numerically.
-  2. Measures the period for a range of amplitudes.
-  3. Compares the numerical result against:
-       - the small-angle (constant) prediction, and
-       - the exact theory (a complete elliptic integral).
-
-Equation of motion (no small-angle approximation):
-      d^2(theta)/dt^2  =  -(g/L) * sin(theta)
-
-Author: Maheshragavendra V
-"""
-
 import numpy as np
 from scipy.integrate import solve_ivp
 from scipy.special import ellipk
